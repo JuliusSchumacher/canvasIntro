@@ -1,11 +1,27 @@
 <html>
     <body>
-        <canvas>
+        <canvas style="border:1px solid lightgrey" height="600" width="1066" id="duk">
             
         </canvas>
         <script>
             
+            var canv = document.getElementById("duk");
+            var ctx = canv.getContext("2d");
+            var img = document.getElementById("scream")
+            
+            ctx.beginPath
+            ctx.arc(300, 200, 150, 0,2*Math.PI)
+            ctx.lineWidth = 20;
+            ctx.strokeStyle = "antiquewhite"
+            ctx.stroke()
+            
+            
+            ctx.font = "30px arial"
+            ctx.fillText("Kaffefläck?!", 100, 200);
+            
+            
         </script>
+        
     </body>
     
 </html>
